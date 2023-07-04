@@ -1,0 +1,206 @@
+@font-face {
+    font-family: 'neptune';
+    src: url(./fonts/Neptune.ttf);
+}    
+
+@font-face {
+    font-family: 'nusar' ;
+    src: url(./fonts/Neptune.ttf);
+}
+
+
+body{
+    margin:0 100px;
+    background-color: #ffeae0;
+}
+
+
+/* menu */
+
+.nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+}
+.nav .logo h1{
+    font-weight: 600;
+    font-family: 'neptune';
+    color: black;
+    font-size: 30px;
+}
+.nav .logo b{
+    color: #ff511c;    
+}
+.nav ul{
+    display: flex;
+    list-style: none;
+}
+.nav ul li{
+    margin-left: 30px;
+}
+.nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-weight: 550;
+    font-family: sans-serif;
+    font-size: 16px;
+}
+
+
+
+
+/* input */
+
+button{
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: 600;
+
+}
+.SignIn{
+    background: transparent;
+    border: none;
+}
+.SignUp{
+    background-color: #ff511c;
+    color: white;
+    border-radius: 5px;
+    border: none;
+}
+
+/* content */
+
+.content{
+    display: grid;
+    grid-template-columns: 50% auto;
+    gap: 30px;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.content .content-left{
+    display: block;
+    width: 100%;
+}
+.content .content-left .info{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.content .content-left .info h2{
+    font-size: 60px;
+    font-family: sans-serif;
+    margin-bottom: 30px;
+}
+.content .content-left .info p{
+    font-size: 23px;
+    line-height: 2pc;
+    margin-bottom: 30px;
+    font-family: sans-serif;
+}
+.content .content-left button{
+padding: 10px 23px;
+background-color: #ff511c;
+color: white;
+border:none;
+border-radius: 4px;
+cursor: pointer;
+}
+.content .content-right{
+    display: block;
+    width: 100%;
+}
+.content .content-right img{
+    width: 400px;
+    height: auto;
+    position: relative;
+    animation: rotate 10s linear infinite;
+}
+
+/* animation */
+
+@keyframes rotate {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+h3{
+    font-size: 20px;
+    font-weight: 600;
+    font-family: sans-serif;
+    margin-bottom: -49px;
+    margin-top: 100px;
+}
+.category{
+    width: 100%;
+    display: flex;
+    margin-bottom: 50px;
+    justify-content: center;
+}
+.category .list-items{
+    width: 90%;
+    position: relative;
+    margin-top: 50px;
+}
+
+.category .list-items .card-list{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.category .card-list .card{
+    width: 200px;
+    height: auto;
+    display:block;
+    padding: 10px;
+    border-radius: 10px;
+    position: relative;
+    background-color: white;
+    outline-color: #ff511c 5px;
+}
+.category .card-list .card img{
+    width: 70px;
+    height: 70px;
+    bottom: 188px;
+    left: 75px;
+    object-fit: cover;
+    object-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    box-shadow: 0 20px 20px #faad96;
+    border-radius: 5px;
+}
+.category .card-list .card .food-title{
+    padding: 40px 0 10px;
+}
+.category .card-list .card .food-title h1{
+    text-align: center;
+    font-weight: bold ;
+    font-size: 16px ;
+    font-family: sans-serif;
+}
+.category .card .food-desc{
+    font-size: 13px;
+    text-align: center;
+    font-weight: 549;
+    margin-bottom: 20px;
+    font-family: sans-serif;
+}
+.category .card .price{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.category .card .price p{
+    text-align: center;
+    font-size: 15px;
+    font-weight: 600;
+    font-family: sans-serif;
+    margin-left: 75px;
+}
